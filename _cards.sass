@@ -1,0 +1,80 @@
+.card
+  +border-radius(2px)
+  display: inline-block
+  font-size: 14px
+  overflow: auto
+  vertical-align: top
+
+  > a
+    color: $color_text
+    text-decoration: none
+
+  header
+    padding: 0
+    margin: $p6 $p4 $p4 $p4
+    h1, h2, h3, h4, h5
+      margin: 0
+  header + p
+    padding-bottom: 0
+
+  p
+    padding: 0
+    margin: $p4
+    font-weight: 300
+  p:LAST-CHILD
+    margin: $p4 $p4 $p6 $p4
+
+  .btn-list
+    font-size: 0
+    margin: $p2
+    .btn
+      display: inline-block
+      margin: 0 $p2 0 0
+      padding: 0 $p2
+    &.btn-list-vertical
+      .btn
+        display: block
+        margin-bottom: $p1
+      &:LAST-CHILD
+        margin-bottom: 0
+
+  footer
+    .extra-content
+      background: $color_f5
+      padding: $p2
+      +move-up()
+
+  .btn
+    @extend .btn-flat
+
+  .rich-media
+    background: $color_f5
+    overflow: hidden
+    +border-radius(2px 2px 0 0)
+    img
+      width: 100%
+
+  &.card-xxs
+    width: 160px
+    .rich-media
+      height: 90px
+
+  &.card-xs
+    width: 320px
+    .rich-media
+      height: 180px
+  &.card-md
+    width: 480px
+    .rich-media
+      height: 270px
+
+  &.card-lg
+    width: 640px
+    .rich-media
+      height: 360px
+
+.card-list
+  font-size: 0
+  .card
+    margin-right: $p2
+    margin-bottom: $p2

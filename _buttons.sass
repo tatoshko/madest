@@ -1,0 +1,75 @@
+.btn
+  font-family: $roboto_medium
+  font-size: 13pt
+
+  text-decoration: none
+  text-transform: uppercase
+  text-align: center
+
+  height: $p8
+  line-height: $p8
+  min-width: $p8
+  padding: 0 $p4
+  margin: 0 $p2 $p2 $p2
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  border-radius: 2px
+
+  display: inline-block
+
+  color: $color_blue
+
+  &:HOVER,
+  &:FOCUS
+    @extend .dp1
+  &:ACTIVE
+    @extend .dp3
+
+  &.btn-primary
+    color: $color_white
+    background: $color_blue_light
+    &.btn-flat
+      color: $color_blue
+
+  &.btn-success
+    color: $color_white
+    background: $color_green_light
+    &.btn-flat
+      color: $color_green
+
+  &.btn-danger
+    color: $color_white
+    background: $color_red
+    &.btn-flat
+      color: $color_red
+
+  &.btn-warning
+    color: $color_white
+    background: $color_amber
+    &.btn-flat
+      color: $color_orange
+
+  &.btn-muted
+    color: $color_f5
+    background: $color_grey
+    &.btn-flat
+      color: $color_grey
+
+  &.btn-disabled
+    color: $color_d
+    background: $color_f5
+    &:HOVER,
+    &:FOCUS
+      @extend .dp0
+      cursor: not-allowed
+      &.btn-flat
+        background: transparent
+
+  &.btn-flat
+    background: transparent
+    &:HOVER,
+    &:FOCUS
+      @extend .dp0
+      background: $color_f5
+    &:ACTIVE
+      background: $color_e
