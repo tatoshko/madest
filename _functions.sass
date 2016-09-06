@@ -3,14 +3,17 @@
   -moz-box-shadow: $options
   box-shadow: $options
 
-=move-up()
-  -webkit-transition: all 150ms cubic-bezier(0.0, 0.0, 0.2, 1)
-  -moz-transition: all 150ms cubic-bezier(0.0, 0.0, 0.2, 1)
-  -ms-transition: all 150ms cubic-bezier(0.0, 0.0, 0.2, 1)
-  -o-transition: all 150ms cubic-bezier(0.0, 0.0, 0.2, 1)
-  transition: all 150ms cubic-bezier(0.0, 0.0, 0.2, 1)
+=transition($options)
+  -webkit-transition: $options
+  -moz-transition: $options
+  -ms-transition: $options
+  -o-transition: $options
+  transition: $options
 
 =border-radius($value)
   -webkit-border-radius: $value
   -moz-border-radius: $value
   border-radius: $value
+
+=move-up()
+  +transition(all 150ms cubic-bezier(0.0, 0.0, 0.2, 1))
