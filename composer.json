@@ -1,0 +1,12 @@
+{
+    "name": "tato/madest",
+    "description": "Material design style framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tatoshko",
+            "email": "tatoshko@gmail.com"
+        }
+    ]
+}
