@@ -2,6 +2,8 @@
     "name": "tatoshko/madest",
     "description": "Material design style framework",
     "type": "library",
+    "keywords": ["material", "design", "style", "css", "sass"],
+    "homepage": "https://github.com/tatoshko/madest",
     "license": "MIT",
     "authors": [
         {
